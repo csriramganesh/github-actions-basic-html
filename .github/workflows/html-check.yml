@@ -1,0 +1,20 @@
+name: HTML basic Workflow
+
+on: 
+  push:
+    branches: 
+      - main
+
+jobs:
+  html-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: show index.html content
+        run: cat index.html
+
+      - name: print success message
+        run: echo "Github-actions workflow successfull"
+      
+    
