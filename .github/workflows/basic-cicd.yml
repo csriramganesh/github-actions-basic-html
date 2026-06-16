@@ -1,0 +1,45 @@
+name: Basic CI CD pipeline
+
+on: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Choose environment"
+        required: true
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - prod
+
+jobs:
+  clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+  
+      - name: clone code
+        run: echo "code clone successfull"
+        
+  build:
+    runs-on: ubuntu-latest
+    needs: clone
+    steps:
+      - name: code build
+        run: echo "build successfull"
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: test
+        run: echo "test successfull"
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: ${{ inputs.environment == 'prod' }}
+    steps:
+      - name: deploy
+        run: echo "deploy succssfull"
