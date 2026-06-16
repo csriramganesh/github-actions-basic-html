@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: show index.html content
-        run: cat index.html
+        run: whoami
 
       - name: print success message
         run: echo "Github-actions workflow successfull"
