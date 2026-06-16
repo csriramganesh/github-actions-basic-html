@@ -1,10 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sriram Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sriram Kanni | DevOps Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #0f172a;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 8px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 8px 12px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .project {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-left: 4px solid #38bdf8;
+      background: #f8fafc;
+    }
+
+    .project h3 {
+      color: #1e293b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      color: white;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello Sriram</h1>
-  <p>Welcome to my DevOps portfolio website.</p>
+
+  <header>
+    <h1>Sriram Kanni</h1>
+    <p>DevOps Engineer | Cloud | Docker | Jenkins | GitHub Actions | Kubernetes</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a DevOps Engineer with hands-on experience in Linux, Git, Docker,
+      Jenkins, CI/CD pipelines, AWS, Kubernetes, GitHub Actions, and automation.
+      I am currently rebuilding and strengthening my DevOps skills through
+      practical projects, real-world workflows, and portfolio-based learning.
+    </p>
+    <br />
+    <p>
+      My focus is on creating production-style DevOps projects, documenting them
+      clearly, and building a strong GitHub and LinkedIn portfolio for DevOps roles.
+    </p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <span>Linux</span>
+      <span>Shell Scripting</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>GitHub Actions</span>
+      <span>Docker</span>
+      <span>Docker Compose</span>
+      <span>Jenkins</span>
+      <span>CI/CD</span>
+      <span>AWS EC2</span>
+      <span>Kubernetes</span>
+      <span>EKS</span>
+      <span>Terraform</span>
+      <span>Trivy</span>
+      <span>ArgoCD</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>DevOps Projects</h2>
+
+    <div class="project">
+      <h3>GitHub Actions Portfolio Deployment</h3>
+      <p>
+        Created a GitHub Actions workflow to automatically deploy a static
+        portfolio website to GitHub Pages whenever changes are pushed to
+        <strong>index.html</strong>.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Jenkins CI/CD Pipeline for Two-Tier Flask App</h3>
+      <p>
+        Built a Jenkins pipeline to clone code, build Docker images, push images
+        to DockerHub, scan using Trivy, and deploy using Docker Compose.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Dockerized Two-Tier Flask and MySQL Application</h3>
+      <p>
+        Containerized a Flask application with MySQL using Docker networking,
+        volumes, environment variables, and Docker Compose.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Jenkins Master-Agent Setup</h3>
+      <p>
+        Configured Jenkins controller and agent nodes using SSH, executed
+        pipelines on an agent node, and practiced real-world Jenkins distributed builds.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Linux Automation Projects</h3>
+      <p>
+        Created shell scripting projects including user management automation,
+        backup automation with cron, log analysis, and health monitoring scripts.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Kubernetes and ArgoCD Practice</h3>
+      <p>
+        Practiced deploying applications on Kubernetes using manifests,
+        services, deployments, jobs, secrets, config maps, and GitOps with ArgoCD.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Learning Journey</h2>
+    <p>
+      I am actively following a structured DevOps learning path covering Linux,
+      Git, Docker, Jenkins, Kubernetes, Terraform, AWS, CI/CD, monitoring,
+      security scanning, and GitOps.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p><strong>GitHub:</strong> <a href="https://github.com/csriramganesh" target="_blank">github.com/csriramganesh</a></p>
+    <p><strong>LinkedIn:</strong> <a href="#" target="_blank">Add your LinkedIn profile link here</a></p>
+    <p><strong>Email:</strong> sriramearning23@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Sriram Kanni | DevOps Portfolio</p>
+  </footer>
+
 </body>
 </html>
